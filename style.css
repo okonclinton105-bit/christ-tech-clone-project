@@ -1,0 +1,110 @@
+/* My Basic Flexbox CSS */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Top Navigation */
+.header-bar {
+    background-color: white;
+    padding: 15px 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, button right */
+    align-items: center; /* Centers items vertically */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Replaces the &nbsp; spacing */
+}
+
+.my-links {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.black-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+/* Hero Section */
+.big-hero-box {
+    background-color: white;
+    margin-top: 20px;
+    padding: 40px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items like the old <center> tag */
+    text-align: center;
+}
+
+.hero-text-area {
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px; /* Spaces buttons without <br> */
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-section {
+    background-color: transparent;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Mission and Vision section */
+.two-column-layout {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if screen is small */
+    justify-content: space-between; /* Puts space between the boxes */
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.half-box {
+    width: 45%; /* Makes them take up almost half the screen */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Blog Section */
+.blog-section {
+    background-color: white;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid gray;
+}
+
+.blog-card {
+    border: 1px solid black;
+    width: 350px;
+    padding: 15px;
+    margin-top: 20px; /* Replaces <br> */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
